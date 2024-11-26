@@ -11,10 +11,3 @@
   <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 </div>
-
-## 🛠️ Rodar o projeto
-
-<div>
-  <a href="https://rythmix-nine.vercel.app" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" target="_blank"></a>
-  <p> A aplicação pode apresentar alguns bugs e levar mais tempo para carregar as músicas na plataforma Vercel. </p>
-</div>
