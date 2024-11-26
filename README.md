@@ -3,7 +3,7 @@
 <h2>📌 Sobre</h2>
 <p> Este projeto é um site de músicas desenvolvido como parte dos meus estudos em HTML, CSS e JavaScript. O objetivo foi praticar e aprimorar meus conhecimentos nessas tecnologias e em requisições http, criando uma experiência imersiva e personalizada no navegador. </p>
 
-![Sem título](https://github.com/user-attachments/assets/a020be50-b438-4658-8247-fed1594b1db5)
+![rythmix](https://github.com/user-attachments/assets/6758d94b-0420-45cc-947f-8e4949952f66)
 
 ## 🚀 Tecnologias Utilizadas
 <div>
