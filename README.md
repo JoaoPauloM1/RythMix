@@ -1,7 +1,9 @@
-![audio-8777](https://github.com/user-attachments/assets/4d886e98-c2fd-430c-9e3d-765225e11307)
+![2024-11-26-RythMix](https://github.com/user-attachments/assets/20ef25ad-c1bb-4a17-9fdb-00367b39cee4)
 
 <h2>📌 Sobre</h2>
 <p> Este projeto é um site de músicas desenvolvido como parte dos meus estudos em HTML, CSS e JavaScript. O objetivo foi praticar e aprimorar meus conhecimentos nessas tecnologias e em requisições http, criando uma experiência imersiva e personalizada no navegador. </p>
+
+![audio-8777](https://github.com/user-attachments/assets/4d886e98-c2fd-430c-9e3d-765225e11307)
 
 ![rythmix](https://github.com/user-attachments/assets/6758d94b-0420-45cc-947f-8e4949952f66)
 
