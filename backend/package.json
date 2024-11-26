@@ -1,11 +1,12 @@
 {
-  "name": "json-server",
+  "name": "backend",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "json-server --watch db.json --port 3000"
   },
-  "dependencies": {
-    "json-server": "^0.17.0"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
