@@ -1,0 +1,196 @@
+body {
+    background-color: #252525;
+    margin: 0;
+  }
+
+.container-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    background-color: #313131;
+    border-bottom: 3px solid #901bda;
+    z-index: 1000;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.aviso {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: right;
+    margin-top: 5px;
+  }
+
+.container-reproducao {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 35%;
+    height: calc(100vh - 85px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome-reproducao {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.capa {
+    border: 3px solid #901bda;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.volume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.volume, .aumentar, .diminuir {
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.volume:hover, .aumentar:hover, .diminuir:hover {
+    transform: scale(1.1);
+}
+
+.aumentar {
+    margin-bottom: 15px;
+}
+
+.diminuir {
+    margin-top: 15px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.next,
+.previous {
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.play {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.play:hover,
+.next:hover,
+.previous:hover {
+    transform: scale(1.1);
+}
+
+.container-musicas {
+    position: absolute;
+    top: 85px;
+    left: 35%;
+    width: 65%;
+    height: calc(100vh - 85px);
+    overflow-y: auto;
+    background-color: #333;
+    border-left: 3px solid #901bda;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.capa-musica {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.nome-musica {
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nome-musica:hover {
+    color: #901bda;
+    transform: scale(1.05);
+}
+
+.nome-musica:active {
+    color: #7a16b1;
+    transform: scale(1);
+}
+
+.container-musicas span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.autor-musica {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 2px;
+    text-align: left;
+}
+
+.duracao-musica {
+    color: #808080;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    margin-top: 1px;
+    display: block;
+}
+
+#controle-audio {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#tempo-atual,
+#tempo-total {
+    margin: 0 5px;
+}
+
+#tempo-restante {
+    margin-left: 5px;
+    color: #ccc;
+}

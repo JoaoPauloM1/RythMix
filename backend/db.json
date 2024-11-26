@@ -1,0 +1,82 @@
+{
+    "musicas": [
+        {
+            "id": "1",
+            "nome": "Echoes from the mountain",
+            "autor": "Sound EGO",
+            "duracao": 154 
+        },
+        {
+            "id": "2",
+            "nome": "Sunset Reverie",
+            "autor": "Tomas Novoa",
+            "duracao": 198
+        },
+        {
+            "id": "3",
+            "nome": "Fragments Of Sunlight",
+            "autor": "Nick Petrov",
+            "duracao": 153 
+        },
+        {
+            "id": "4",
+            "nome": "Sway",
+            "autor": "Yunior Arronte",
+            "duracao": 213 
+        },
+        {
+            "id": "5",
+            "nome": "Hip Jazz",
+            "autor": "Benjamin Tissot",
+            "duracao": 163 
+        },
+        {
+            "id": "6",
+            "nome": "Groovy Hip Hop",
+            "autor": "Benjamin Tissot",
+            "duracao": 240 
+        },
+        {
+            "id": "7",
+            "nome": "Happy Rock",
+            "autor": "Benjamin Tissot",
+            "duracao": 105 
+        },
+        {
+            "id": "8",
+            "nome": "High Octane",
+            "autor": "Benjamin Tissot",
+            "duracao": 155 
+        },
+        {
+            "id": "9",
+            "nome": "Rumble",
+            "autor": "Benjamin Tissot",
+            "duracao": 154 
+        },
+        {
+            "id": "10",
+            "nome": "Badass",
+            "autor": "Benjamin Tissot",
+            "duracao": 109 
+        },
+        {
+            "id": "11",
+            "nome": "Echo Of Sadness",
+            "autor": "TURNIQUE",
+            "duracao": 139 
+        },
+        {
+            "id": "12",
+            "nome": "Hearty",
+            "autor": "Aventure",
+            "duracao": 153
+        },
+        {
+            "id": "13",
+            "nome": "River in The Ice",
+            "autor": "Diffie Bosman",
+            "duracao": 226 
+        }
+    ]
+}
