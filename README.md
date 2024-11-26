@@ -5,8 +5,6 @@
 
 ![audio-8777](https://github.com/user-attachments/assets/4d886e98-c2fd-430c-9e3d-765225e11307)
 
-![rythmix](https://github.com/user-attachments/assets/6758d94b-0420-45cc-947f-8e4949952f66)
-
 ## 🚀 Tecnologias Utilizadas
 <div>
   <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
@@ -17,5 +15,6 @@
 ## 🛠️ Rodar o projeto
 
 <div>
-  <a href="https://rpg-rho-fawn.vercel.app" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" target="_blank"></a>   
+  <a href="https://rythmix-nine.vercel.app" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" target="_blank"></a>
+  <p> A aplicação pode apresentar alguns bugs e levar mais tempo para carregar as músicas na plataforma Vercel. </p>
 </div>
