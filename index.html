@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>RythMix</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container-logo"> 
+        <img src="img/logo.png" class="logo">
+        <p class="aviso">Todas as músicas utilizadas neste projeto são livres de direitos autorais.</p>
+    </div>
+    <div class="container-reproducao">
+        <span class="nome-reproducao" id="nome-reproducao">Música</span>
+        <img id="capa" src="img/capa.png" class="capa" alt="Capa da Música">
+        <div class="volume-container">
+            <img src="img/aumentar.png" class="aumentar" id="botao-aumentar">
+            <img src="img/volume.png" class="volume" id="botao-mutar">
+            <img src="img/diminuir.png" class="diminuir" id="botao-diminuir">
+        </div>
+        <div class="controls">
+            <img src="img/previous.png" class="previous" id="previous">
+            <img src="img/pause.png" class="play" id="pause">
+            <img src="img/next.png" class="next" id="next">
+        </div>
+        <div id="controle-audio">
+            <span id="tempo-atual">0:00</span> / <span id="tempo-total">0:00</span>
+        </div>
+    </div>
+    <div class="container-musicas" id="container-musicas"> </div>
+    <script type="module" src="js/api.js"></script>
+    <script type="module" src="js/ui.js"></script>
+</body>
+</html>
