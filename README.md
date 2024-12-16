@@ -1,4 +1,4 @@
-![2024-11-26-RythMix](https://github.com/user-attachments/assets/20ef25ad-c1bb-4a17-9fdb-00367b39cee4)
+![2024-12-16-RythMix](https://github.com/user-attachments/assets/8dda8d62-9c3c-479b-b95f-8cbe76987840)
 
 <h2>📌 Sobre</h2>
 <p> Este projeto é um site de músicas desenvolvido como parte dos meus estudos em HTML, CSS e JavaScript. O objetivo foi praticar e aprimorar meus conhecimentos nessas tecnologias e em requisições HTTP, criando uma experiência imersiva e personalizada no navegador. </p>
