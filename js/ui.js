@@ -10,7 +10,7 @@ const ui = {
         const divMusicas = document.getElementById("container-musicas")
 
         try {
-            const musicas = await api.carregarMusicas()
+            const { musicas } = await api.carregarMusicas();
             divMusicas.innerHTML = ""
             musicas.forEach(musica => {
                 divMusicas.innerHTML += `
