@@ -1,7 +1,7 @@
 const api = {
     async carregarMusicas() {
         try {
-            const response = await fetch('http://localhost:3000/musicas')
+            const response = await fetch('https://joaopaulom1.github.io/RythMix/database/db.json')
             return await response.json()       
         } catch {
             alert("Erro ao carregar músicas.") 
