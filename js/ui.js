@@ -1,10 +1,12 @@
+// Note: Variable and functions names are in Portuguese as the project was initially developed this way.
+
 import api from "./api.js"
 
 const ui = {
     musicaAtual: null,
     indiceAtual: 0,
-    volumeAnterior: 0.15, // Salva o volume ajustado
-    volumeMutado: false, // Para saber se a música está mutada
+    volumeAnterior: 0.15,
+    volumeMutado: false,
 
     async renderizarMusicas() {
         const divMusicas = document.getElementById("container-musicas")
@@ -25,15 +27,14 @@ const ui = {
             this.musicas = musicas
             this.tocarMusica()
         } catch (error) {
-            console.error("Erro ao carregar músicas:", error)
-            alert("Erro ao carregar músicas.")
+            console.error("Error loading music:", error)
+            alert("Error loading music.")
         }
     },
 
-    // Função para formatar a duração de segundos para minutos:segundos
     formatarDuracao(duracao) {
         const minutos = Math.floor(duracao / 60);
-        const segundos = Math.floor(duracao % 60); // Garantir que sejam números inteiros
+        const segundos = Math.floor(duracao % 60);
         return `${minutos}:${segundos < 10 ? '0' : ''}${segundos}`;
     },
 
@@ -42,7 +43,7 @@ const ui = {
         const capa = document.getElementById("capa")
 
         if (!capa) {
-            console.error("Elemento com ID 'capa' não encontrado no DOM.")
+            console.error("Element with ID 'capa' not found in the DOM.")
             return
         }
 
@@ -53,7 +54,7 @@ const ui = {
                     const id = spanElement.getAttribute("data-id")
                     this.tocarPorIndice(index, id, capa)
                 } else {
-                    console.error("Data-id não encontrado ou elemento pai inválido.")
+                    console.error("Data-id not found or invalid parent element")
                 }
             })
         })
@@ -69,7 +70,6 @@ const ui = {
         capa.src = `img/capa-${id}.png`
         this.musicaAtual = new Audio(`musicas/musica-${id}.mp3`)
 
-        // Atualiza a duração total da música
         const tempoTotalElemento = document.getElementById("tempo-total")
         if (tempoTotalElemento) {
             this.musicaAtual.addEventListener("loadedmetadata", () => {
@@ -77,7 +77,6 @@ const ui = {
             })
         }
 
-        // Mantém o volume atual, se não estiver mutado
         if (this.volumeMutado) {
             this.musicaAtual.volume = 0
         } else {
@@ -86,7 +85,6 @@ const ui = {
 
         this.musicaAtual.play()
 
-        // Atualiza o nome da música
         const nomeReproducao = document.querySelector(".nome-reproducao")
         if (nomeReproducao) {
             nomeReproducao.textContent = this.musicas[indice].nome
@@ -95,17 +93,14 @@ const ui = {
         const botaoPause = document.getElementById("pause")
         if (botaoPause) botaoPause.src = "img/pause.png"
 
-        // Atualiza o tempo atual da música em tempo real
         const tempoAtualElemento = document.getElementById("tempo-atual")
         if (tempoAtualElemento) {
             this.musicaAtual.addEventListener("timeupdate", () => {
                 tempoAtualElemento.textContent = this.formatarDuracao(this.musicaAtual.currentTime)
 
-                // Atualiza o tempo restante
                 const tempoRestante = this.musicaAtual.duration - this.musicaAtual.currentTime
-                if (tempoRestante <= 0) return // A música terminou
+                if (tempoRestante <= 0) return
 
-                // Exibe o tempo restante
                 const tempoRestanteElemento = document.getElementById("tempo-restante")
                 if (tempoRestanteElemento) {
                     tempoRestanteElemento.textContent = `-${this.formatarDuracao(tempoRestante)}`
@@ -131,7 +126,6 @@ const ui = {
 document.addEventListener("DOMContentLoaded", () => {
     ui.renderizarMusicas()
 
-    // Botão para próxima música
     const botaoProxima = document.getElementById("next")
     if (botaoProxima) {
         botaoProxima.addEventListener("click", () => {
@@ -139,7 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
 
-    // Botão para música anterior
     const botaoAnterior = document.getElementById("previous")
     if (botaoAnterior) {
         botaoAnterior.addEventListener("click", () => {
@@ -147,7 +140,6 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
 
-    // Botão para play/pause
     const botaoPause = document.getElementById("pause")
     if (botaoPause) {
         botaoPause.addEventListener("click", () => {
@@ -163,25 +155,22 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
 
-    // Botão Mutar
     const botaoMutar = document.getElementById("botao-mutar")
     if (botaoMutar) {
         botaoMutar.addEventListener("click", () => {
             if (ui.musicaAtual) {
                 if (ui.musicaAtual.volume > 0) {
-                    // Se o volume não for zero, muda para mutado
                     ui.volumeAnterior = ui.musicaAtual.volume
                     ui.musicaAtual.volume = 0
                     ui.volumeMutado = true
                     botaoMutar.src = "img/mutado.png"
                 } else {
-                    // Se o volume for zero, restaura para um volume padrão (ex: 15%)
                     const volumePadrao = 0.15
                     ui.musicaAtual.volume = volumePadrao
                     ui.volumeAnterior = volumePadrao
                     ui.volumeMutado = false
                     botaoMutar.src = "img/volume.png"
-                    console.log(`Volume restaurado para o padrão: ${Math.round(volumePadrao * 100)}%`)
+                    console.log(`Volume restored to default: ${Math.round(volumePadrao * 100)}%`)
                 }
             }
         })
@@ -199,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     botaoMutar.src = "img/volume.png"
                 }
                 ui.volumeAnterior = novoVolume
-                console.log(`Volume aumentado para: ${Math.round(novoVolume * 100)}%`)
+                console.log(`Volume increased to: ${Math.round(novoVolume * 100)}%`)
             }
         })
     }
@@ -219,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     botaoMutar.src = "img/volume.png"
                 }
                 ui.volumeAnterior = novoVolume
-                console.log(`Volume diminuído para: ${Math.round(novoVolume * 100)}%`)
+                console.log(`Volume decreased to: ${Math.round(novoVolume * 100)}%`)
             }
         })
     }
